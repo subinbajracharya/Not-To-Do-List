@@ -53,7 +53,7 @@ const AddTaskForm = ({ tasks, handleOnAdd }) => {
           }}
         />
       </div>
-      <div className="col-sm-12 col-md-3 col-lg-2">
+      <div className="col-12 col-md-3 col-lg-2">
         <input
           type="number"
           className="form-control"
@@ -71,7 +71,7 @@ const AddTaskForm = ({ tasks, handleOnAdd }) => {
           }}
         />
       </div>
-      <div className="col-sm-12 col-md-3 col-lg-2">
+      <div className="col-12 col-md-3 col-lg-2">
         <select
           className="form-select"
           name="type"
@@ -90,7 +90,7 @@ const AddTaskForm = ({ tasks, handleOnAdd }) => {
           <option value="bad">Bad</option>
         </select>
       </div>
-      <div className="col-sm-12 col-md-2">
+      <div className="col-12 col-md-2">
         <button
           type="button"
           className="btn btn-primary w-100"

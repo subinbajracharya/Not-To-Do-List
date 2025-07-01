@@ -12,38 +12,7 @@ function App() {
   const [goodHour, setGoodHour] = useState(0);
   const [badhour, setBadHour] = useState(0);
 
-  let [tasks, setTasks] = useState([
-    {
-      id: "1",
-      task: "TASK 1",
-      hour: 10,
-      type: "good",
-    },
-    {
-      id: "2",
-      task: "TASK 2",
-      hour: 20,
-      type: "bad",
-    },
-    {
-      id: "3",
-      task: "TASK 3",
-      hour: 30,
-      type: "good",
-    },
-    {
-      id: "4",
-      task: "TASK 4",
-      hour: 40,
-      type: "bad",
-    },
-    {
-      id: "5",
-      task: "TASK 5",
-      hour: 50,
-      type: "bad",
-    },
-  ]);
+  const [tasks, setTasks] = useState([]);
 
   const calculateTotalHours = (tempTaskList) => {
     let totalHour = tempTaskList.reduce(
