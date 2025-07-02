@@ -84,7 +84,7 @@ const TaskList = ({
           </table>
         </div>
         {type == "good" ? (
-          <div className="alert alert-info" role="alert">
+          <div className="alert alert-primary" role="alert">
             You saved {hour} hours
           </div>
         ) : (
