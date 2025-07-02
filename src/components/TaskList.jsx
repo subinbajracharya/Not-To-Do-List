@@ -1,6 +1,7 @@
 import React from "react";
 import { RiDeleteBin2Fill } from "react-icons/ri";
 import { LuArrowLeftRight, LuArrowRightLeft } from "react-icons/lu";
+import { MdOutlineGppGood, MdOutlineGppBad } from "react-icons/md";
 
 const TaskList = ({
   title,
@@ -29,6 +30,12 @@ const TaskList = ({
                   return (
                     <tr key={item.id}>
                       <th scope="row">{index + 1}</th>
+                      <td>
+                        <MdOutlineGppBad />
+                      </td>
+                      <td>
+                        <MdOutlineGppGood />
+                      </td>
                       <td>{item.task}</td>
                       <td>{item.hour} Hrs</td>
                       <td>
