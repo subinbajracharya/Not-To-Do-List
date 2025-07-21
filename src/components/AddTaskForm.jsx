@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-const AddTaskForm = ({ tasks, handleOnAdd }) => {
+const AddTaskForm = ({ handleOnAdd }) => {
   const generateUniqueId = () => {
     let stringGenerator =
       "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789";
@@ -17,8 +17,8 @@ const AddTaskForm = ({ tasks, handleOnAdd }) => {
   };
 
   const [taskObj, setTaskObj] = useState({
-    task: "INITIAL TASK",
-    hour: 10,
+    task: "",
+    hour: 0,
     type: "good",
   });
 
@@ -59,7 +59,7 @@ const AddTaskForm = ({ tasks, handleOnAdd }) => {
           className="form-control"
           id="hour"
           name="hour"
-          placeholder="HOUR"
+          placeholder="ENTER HOUR"
           value={taskObj.hour}
           onChange={(e) => {
             let newTaskObj = {

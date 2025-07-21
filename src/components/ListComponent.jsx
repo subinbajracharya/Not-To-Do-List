@@ -7,12 +7,13 @@ const ListComponent = ({
   handleOnSwap,
   goodHour,
   badHour,
+  handleOnDeleteAll,
 }) => {
   // good list
-  let goodTasks = tasks.filter((item) => item.type == "good");
+  let goodTasks = tasks.filter((item) => item.type === "good");
 
   // bad list
-  let badTasks = tasks.filter((item) => item.type == "bad");
+  let badTasks = tasks.filter((item) => item.type === "bad");
 
   return (
     <div className="row mb-5">
@@ -24,16 +25,18 @@ const ListComponent = ({
         handleOnSwap={handleOnSwap}
         type="good"
         hour={goodHour}
+        handleOnDeleteAll={handleOnDeleteAll}
       />
 
       {/* Bad List */}
       <TaskList
         title="Bad List"
         tasks={badTasks}
+        type="bad"
         handleOnDelete={handleOnDelete}
         handleOnSwap={handleOnSwap}
-        type="bad"
         hour={badHour}
+        handleOnDeleteAll={handleOnDeleteAll}
       />
     </div>
   );
