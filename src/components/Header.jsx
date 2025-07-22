@@ -5,7 +5,7 @@ const Header = (props) => {
   return (
     <div className="row">
       <div className="col py-5">
-        <h1>
+        <h1 className="d-flex align-items-center justify-content-center">
           <FaRegListAlt className="me-2" />
           {props.title}
         </h1>
